@@ -5,8 +5,8 @@ import { catchError } from 'rxjs/operators';
 import { throwError } from 'rxjs';
 import { InfoService } from './info.service';
 
-const base = 'https://api.telegram.org/bot1361147321:AAFvRvJfScQJrjIkW66-_1RlITbgY2UrirY/sendMessage';
-const chatId = 435534784;
+const base = '';
+const chatId = 0;
 
 @Injectable({
   providedIn: 'root'
