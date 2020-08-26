@@ -1,0 +1,20 @@
+<mat-card>
+  <mat-card-header>
+    <mat-icon mat-card-avatar>blur_on</mat-icon>
+    <mat-card-title>из КРАСНОДАРА</mat-card-title>
+    <mat-card-subtitle>Тарифы</mat-card-subtitle>
+  </mat-card-header>
+  <mat-table [dataSource]="price">
+    <ng-container matColumnDef="city">
+      <mat-header-cell *matHeaderCellDef> Город </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.city}} </mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="price">
+      <mat-header-cell *matHeaderCellDef> Цена (руб.) </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.price}} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</mat-card>

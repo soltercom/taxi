@@ -1,0 +1,17 @@
+.app-toolbar {
+  position: fixed;
+  z-index: 200;
+  flex-shrink: 0;
+}
+
+.contact-button-1st {
+  margin-left: 9px;
+}
+
+.contact-button {
+  margin-left: 12px;
+}
+
+.matTooltipClass {
+  background: #b71c1c;
+}

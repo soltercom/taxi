@@ -1,0 +1,37 @@
+<!--<div fxLayout="row">
+  <mat-icon class="one" style="left: 10vh; top: 1vh;">blur_on</mat-icon>
+</div>
+<div fxLayout="row">
+  <mat-icon class="one" style="left: 6vh; top: 2vh;">blur_on</mat-icon>
+  <mat-icon class="one" style="left: 14vh; top: 2vh;">blur_on</mat-icon>
+</div>
+<div fxLayout="row">
+  <mat-icon class="one" style="left: 2vh; top: 5vh;">blur_on</mat-icon>
+  <mat-icon class="one" style="left: 10vh; top: 5vh;">blur_on</mat-icon>
+  <mat-icon class="one" style="left: 18vh; top: 5vh;">blur_on</mat-icon>
+</div>
+<div fxLayout="row">
+  <mat-icon class="two" style="left: 6vh; top: 7vh;">blur_on</mat-icon>
+  <mat-icon class="two" style="left: 14vh; top: 7vh;">blur_on</mat-icon>
+</div>-->
+
+<mat-toolbar color="primary" class="app-toolbar mat-elevation-z8">
+  <mat-toolbar-row>
+    <mat-icon>blur_on</mat-icon>
+    <span> Междугороднее такси</span>
+  </mat-toolbar-row>
+  <mat-toolbar-row>
+    <a href="tel:{{telephone}}" mat-raised-button color="accent"
+       matTooltipClass="tooltip-color"
+       matTooltip="Позвонить"
+       class="contact-button-1st">{{telephone}}</a>
+    <a mat-mini-fab color="accent" href="{{telegram}}" target="_blank"
+       matTooltipClass="tooltip-color"
+       matTooltip="Написать в Telegram"
+       class="contact-button"><mat-icon svgIcon="telegram"></mat-icon></a>
+    <a mat-mini-fab color="accent" href="{{whatsapp}}" target="_blank"
+       matTooltipClass="tooltip-color"
+       matTooltip="Написать в WhatsApp"
+       class="contact-button"><mat-icon svgIcon="whatsapp"></mat-icon></a>
+  </mat-toolbar-row>
+</mat-toolbar>

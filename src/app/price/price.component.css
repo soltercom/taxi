@@ -1,0 +1,15 @@
+mat-card-header mat-icon {
+  font-size: 50px;
+  color: #01579b;
+}
+
+mat-card {
+  max-width: 468px;
+}
+
+.mat-column-city {
+  flex: 0 0 70%;
+}
+.mat-column-price {
+  flex: 0 0 30%;
+}
